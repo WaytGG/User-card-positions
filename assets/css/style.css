@@ -25,32 +25,14 @@ body {
   position: relative;
 }
 
-.wrapper::before {
-  display: inline-block;
-  width: 30px;
-  height: 15px;
-  content: 'pro';
-  position: absolute;
-  color: white;
-  background-color: rgb(233, 221, 221);
-  top: 150px;
-  right: 380px;
-  padding: 5px 9px;
-  border-radius: 20px;
-  z-index: 1;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase ;
-  text-align: center;
-}
-
 .wrapper::after {
   display: inline-block;
   content: url(../icons/icons-plus.svg);
   position: absolute;
-  top: 200px;
-  right: 320px;
+  top: 210px;
+  right: 330px;
 }
+
 
 .card-block {
   border-radius: 5px;
@@ -84,16 +66,33 @@ body {
   height: 217px;
 }
 
-.avatar {
+.card-3::before {
   display: inline-block;
+  width: 30px;
+  height: 15px;
+  content: 'pro';
+  position: absolute;
+  color: white;
+  background-color: rgb(233, 221, 221);
+  top: 20px;
+  right: 20px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  z-index: 1;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase ;
+  text-align: center;
+}
+
+.avatar {
   max-width: 217px;
-  max-height: 217px;
   width: 100%;
+  object-fit: cover;
 }
 
 .about {
   display: inline-block;
-  text-align: left;
   width: 61.2%;
   height: 100%;
   vertical-align: top;
@@ -111,11 +110,13 @@ body {
 }
 
 .social-numbers {
-  display: inline-block;
-  padding-top: 25px;
-  width: 100%;
-  height: 56%;
+  padding-top: 40px;
   color: rgb(185, 175, 175);
+}
+
+.social-numbers section span {
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .shots {
