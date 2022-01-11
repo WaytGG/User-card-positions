@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family:'Be Vietnam Pro';
-  src: url(../fonts/BeVietnamPro-Regular.ttf);
+  font-family:'BeVietnamPro-Regular';
+  src: url('../fonts/BeVietnamPro-Regular.woff') format('woff');
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   height: 100vh;
   font-size: 0px;
   background-color: rgb(228, 217, 217);
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'BeVietnamPro-Regular';
 }
 
 .wrapper {
